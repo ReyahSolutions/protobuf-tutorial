@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package proto.concatenation;
+
+option go_package = "github.com/reyahsolutions/protobuf-tutorial/client/api";
+
+option java_package = "com.reyahsolutions.protobuf.tutorial";
+option java_outer_classname = "ConcatenationProto";
+option java_multiple_files=true; 
+
+// Service to concatenate strings
+service Concatenation {
+
+    // Concatenation request
+    rpc Concatenate(ConcatenationRequest) returns (ConcatenationResult);
+
+}
+
+// Request data to create a new concatenation
+message ConcatenationRequest {
+    // First value of the concatenation
+    string a = 2;
+
+    // Second value of the concatenation
+    string b = 3;
+
+}
+
+// ConcatenationResult we have to respond
+message ConcatenationResult {
+    // Result of the process
+    string result = 2;
+}
