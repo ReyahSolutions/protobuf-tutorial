@@ -23,7 +23,7 @@ func main() {
 	cfg, err := config.New(app)
 	if err != nil {
 		app.Usage(os.Args[1:])
-		os.Exit(1)
+		panic(err)
 	}
 
 	svc := server.New()
@@ -34,11 +34,11 @@ func main() {
 
 	lis, err := net.Listen("tcp", cfg.Addr)
 	if err != nil {
-		os.Exit(1)
+		panic(err)
 	}
 	fmt.Printf("running on %s...\n", cfg.Addr)
 	err = grpcServer.Serve(lis)
 	if err != nil {
-		os.Exit(1)
+		panic(err)
 	}
 }
