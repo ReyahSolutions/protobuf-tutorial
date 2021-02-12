@@ -14,7 +14,7 @@ type (
 	}
 )
 
-// Parse parses the configuration from command args
+// New parses the configuration from command args
 func New(app *kingpin.Application) (*Config, error) {
 	var c Config
 
