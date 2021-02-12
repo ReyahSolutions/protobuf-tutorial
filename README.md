@@ -80,6 +80,6 @@ Links
 - [Protocol buffers](https://developers.google.com/protocol-buffers)
 - [GRPC](https://grpc.io/)
 - [Awesome GRPC](https://github.com/grpc-ecosystem/awesome-grpc#tools-test)
-
+- [12factor](https://12factor.net/)
 
 doc.v1.2
