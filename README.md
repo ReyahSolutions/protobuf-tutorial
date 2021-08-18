@@ -1,6 +1,6 @@
-# Un petit tour de protobuf en architecture microservice
+# A quick tour of protobuf in microservice architecture
 
-- [Un petit tour de protobuf en architecture microservice](#un-petit-tour-de-protobuf-en-architecture-microservice)
+- [A quick tour of protobuf in microservice architecture](#a-quick-tour-of-protobuf-in-microservice-architecture)
   - [Contact](#contact)
   - [Setup](#setup)
     - [Clone](#clone)
